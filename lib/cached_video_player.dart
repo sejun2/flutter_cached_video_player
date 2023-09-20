@@ -321,6 +321,8 @@ class CachedVideoPlayerController
       }
 
       switch (event.eventType) {
+        case VideoEventType.isPlayingStateUpdate:
+          break;
         case VideoEventType.initialized:
           value = value.copyWith(
             duration: event.duration,
